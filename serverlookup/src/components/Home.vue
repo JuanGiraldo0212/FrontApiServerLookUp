@@ -92,7 +92,7 @@ export default {
       this.item="Loading..."
       this.lookUp=true
       this.archive=false
-      const baseURI = 'http://localhost:8282/servers/'+this.domain
+      const baseURI = 'http://localhost:8282/domain/'+this.domain
        axios.get(baseURI).then((result) => {
          this.item=result.data
          this.showData=true
